@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Figuras Geométricas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/Style3.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4">Cálculo de Figuras Geométricas</h1>
+
+    <div class="card-deck mt-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Círculo</h5>
+          <button class="btn btn-primary" onclick="abrirModal('círculo', 'perímetro')">Perímetro</button>
+          <button class="btn btn-primary" onclick="abrirModal('círculo', 'área')">Área</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Triángulo</h5>
+          <button class="btn btn-primary" onclick="abrirModal('triángulo', 'perímetro')">Perímetro</button>
+          <button class="btn btn-primary" onclick="abrirModal('triángulo', 'área')">Área</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Rectángulo</h5>
+          <button class="btn btn-primary" onclick="abrirModal('rectángulo', 'perímetro')">Perímetro</button>
+          <button class="btn btn-primary" onclick="abrirModal('rectángulo', 'área')">Área</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Cuadrado</h5>
+          <button class="btn btn-primary" onclick="abrirModal('cuadrado', 'perímetro')">Perímetro</button>
+          <button class="btn btn-primary" onclick="abrirModal('cuadrado', 'área')">Área</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal" id="modalCalculo" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitulo">Cálculo de Figura</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div id="contenidoModal"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <center><a class="w-95 btn btn-lg btn-primary mb-3" href="../index.html">Cambiar Reto</a></center>
+  <script src="JS/Script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

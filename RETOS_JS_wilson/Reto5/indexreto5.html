@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="author" content="JWilson Parra">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Instructores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style3.css">
+</head>
+<body class="text-center">
+  <main class="form-signin w-100 m-auto">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <img class="mb-2" src="../IMG/js.png" alt="MY APP" width="100">
+        <h5 class="card-title">Comprobación de Instructores</h5>
+        <div id="menu">
+          <label for="nombres">Nombre:</label>
+          <select class="form-control" id="nombres">
+            <option value="">Seleccionar nombre</option>
+            <option value="Wilson">Wilson</option>
+            <option value="Maria">Maria</option>
+            <option value="Pedro">Pedro</option>
+          </select>
+          <br>
+          <label for="apellidos">Apellido:</label>
+          <select class="form-control" id="apellidos">
+            <option value="">Seleccionar apellido</option>
+            <option value="Parra">Parra</option>
+            <option value="Guerra">Guerra</option>
+            <option value="Porro">Porro</option>
+          </select>
+          <br>
+          <label for="actividades">Actividad:</label>
+          <select class="form-control" id="actividades">
+            <option value="">Seleccionar actividad</option>
+            <option value="Futbol">Futbol</option>
+            <option value="Java">Java</option>
+            <option value="Zumba">Zumba</option>
+          </select>
+          <br>
+          <button class="w-100 btn btn-lg btn-primary mb-4" type="button" onclick="comprobarRespuesta()">Comprobar</button>
+          <a class="w-100 btn btn-lg btn-primary mb-3" href="../index.html">Cambiar Reto</a>
+        </div>
+      </div>
+    </div>
+    <script src="JS/comprobacion.js"></script>
+  </main>
+</body>
+</html>

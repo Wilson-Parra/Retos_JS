@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos JavaScript</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boostrap-icons@1.10.3/font/boostrap-icons.css">
+  <link rel="stylesheet" href="../CSS/StyleTabla.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">METODOS JAVASCRIPT</h5>
+      <p class="card-text">Mira las funciones que tiene javascript.</p>
+      <table>
+        <tr>
+          <th>Evento</th>
+          <th>Ejemplo de Aplicación</th>
+          <th>Ejecución al hacer clic</th>
+        </tr>
+        <tr>
+          <td>click</td>
+          <td>Botón que muestra un mensaje</td>
+          <td><button onclick="alert('Has hecho clic')">Haz clic</button></td>
+        </tr>
+        <tr>
+          <td>mouseenter</td>
+          <td>Elemento que cambia de color al pasar el ratón por encima</td>
+          <td><div onmouseenter="this.style.backgroundColor = 'blue'">Pasa el ratón aquí</div></td>
+        </tr>
+        <tr>
+          <td>mouseleave</td>
+          <td>Elemento que vuelve a su color original al salir el ratón</td>
+          <td><div onmouseleave="this.style.backgroundColor = 'red'">Saca el ratón de aquí</div></td>
+        </tr>
+        <tr>
+          <td>keydown</td>
+          <td>Caja de texto que muestra la tecla presionada</td>
+          <td><input type="text" onkeydown="alert('Has presionado la tecla: ' + event.key)"></td>
+        </tr>
+        <tr>
+          <td>submit</td>
+          <td>Formulario que muestra un mensaje al enviar</td>
+          <td>
+            <form onsubmit="alert('Formulario enviado'); return false;">
+              <input type="submit" value="Enviar">
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>load</td>
+          <td>Página que muestra un mensaje al cargarse completamente</td>
+          <td><body onload="alert('La página se ha cargado')">Contenido de la página</body></td>
+        </tr>
+        <tr>
+          <td>focus</td>
+          <td>Caja de texto que muestra un mensaje al obtener el foco</td>
+          <td><input type="text" onfocus="alert('Has enfocado esta caja de texto')"></td>
+        </tr>
+        <tr>
+          <td>blur</td>
+          <td>Caja de texto que muestra un mensaje al perder el foco</td>
+          <td><input type="text" onblur="alert('Has perdido el foco de esta caja de texto')"></td>
+        </tr>
+        <tr>
+          <td>mouseover</td>
+          <td>Imagen que cambia al pasar el ratón por encima</td>
+          <td><img src="../IMG/whisky.png" onmouseover="this.src='../IMG/whisky.png'" onmouseout="this.src='../IMG/js.png'"></td>
+        </tr>
+        <tr>
+          <td>contextmenu</td>
+          <td>Elemento que muestra un menú contextual al hacer clic derecho</td>
+          <td><div oncontextmenu="alert('Menú contextual mostrado'); return false;">Haz clic derecho aquí</div></td>
+        </tr>
+      </table>
+      <center><a class="w-95 btn btn-lg btn-primary mb-3" href="../index.html">Cambiar Reto</a></center>
+    </div>
+  </div>
+
+</body>
+</html>

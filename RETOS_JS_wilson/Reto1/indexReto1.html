@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="author" content="JWilson Parra">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RETOS JAVASCRIPT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boostrap-icons@1.10.3/font/boostrap-icons.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Style3.css">
+</head>
+<body class="text-center">
+  <main class="form-signin w-100 m-auto">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <img class="mb-4" src="../IMG/js.png" alt="MY APP" width="100">
+        <h5 class="card-title">RETO DE PALABRAS</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+        <p class="card-text">Ingresa tu palabra y descubre sus características.</p>
+        <div id="menu">
+          <label for="floatingInput" class="mb-3">Palabra:</label>
+            <input type="text" class="form-control mb-3" id="reto1" placeholder="Ingrese la palabra" autofocus>
+            <select id="options" class="form-select mb-3" aria-label="Default select example">
+              <option value="1">Longitud de la palabra</option>
+              <option value="2">Convertir a mayúsculas</option>
+              <option value="3">Convertir a minúsculas</option>
+              <option value="4">Primer carácter</option>
+            </select>
+            <button class="w-100 btn btn-lg btn-primary mb-3" onclick="processChoice()">Calcular</button>
+          <script src="Js/Reto1.js"></script>
+          <a class="w-100 btn btn-lg btn-primary" href="../index.html">Cambiar Reto</a>
+  
+        </div>
+      </div>
+    </div>
+  
+  </main>
+  </body>
+</html>  
